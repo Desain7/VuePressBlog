@@ -14,10 +14,10 @@ echo 'study.Desain7.top' > CNAME
 
 if [ -z "$GITHUB_TOKEN" ]; then
   msg='deploy'
-  githubUrl=`git@github.com:Desain7/VuePressBlog.git`
+  githubUrl=git@github.com:Desain7/VuePressBlog.git
 else
   msg='来自github actions的自动部署'
-  githubUrl=`https://Desain7:${GITHUB_TOKEN}@github.com/Desain7/VuePressBlog.git`
+  githubUrl=https://Desain7:${GITHUB_TOKEN}@github.com/Desain7/VuePressBlog.git
   git config --global user.name "Desain7"
   git config --global user.email "1810479856@qq.com"
 fi
